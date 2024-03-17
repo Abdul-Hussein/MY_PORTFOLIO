@@ -1,0 +1,25 @@
+/* mobile.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.card-section {
+  flex-direction: column; /* Change flex direction to column for vertical display */
+  align-items: center; /* Center align items */
+  display: block; /* Reset display to block */
+}
+
+.card {
+  width: calc(100% - 2.5rem); /* Adjust this value based on your desired spacing */
+  margin: 1.25rem auto; /* Center align cards and adjust margin for spacing */
+}
+
+  .menu {
+      display: none; /* Hide the menu for smaller screens */
+      right: 0;
+  }
+  .menu-icon {
+      display: block; /* Display the menu icon for smaller screens */
+      right: 0;
+  }
+
+
+

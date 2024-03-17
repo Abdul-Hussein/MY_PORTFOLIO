@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* CSS styling for the menu navbar */
+nav {
+  background: linear-gradient(to right, #112033, #1e6f63); /* Background color */
+  text-align: center;
+  width: 100%; /* Full width */
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default for larger screens */
+  color: white; /* Icon color */
+  font-size: 1.5em; /* Icon size */
+  padding: 0.9375em; /* Padding around the icon */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.menu {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.logo a {
+  color: white; /* Text color */
+  font-size: 1.5em; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-decoration: none; /* Remove underline */
+  padding: 0.625em 1.25em; /* Padding around the logo */
+}
+
+.menu li {
+  display: inline-block; /* Display menu items inline-block */
+}
+
+.menu li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 0.875em 1.25em; /* Padding for each menu item */
+  text-decoration: none;   
+}
+
+.menu li a:hover {
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+@media screen and (max-width: 48em) {
+  .menu {
+      display: none; /* Hide the menu for smaller screens */
+      right: 0;
+  }
+  .menu-icon {
+      display: block; /* Display the menu icon for smaller screens */
+      right: 0;
+  }
+}
+

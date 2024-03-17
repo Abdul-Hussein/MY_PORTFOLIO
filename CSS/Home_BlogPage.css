@@ -1,0 +1,173 @@
+/*overall*/
+body{
+  font-family: "Quicksand", sans-serif;
+  margin: 0.5rem;
+/* Background color */
+  animation-name: moveUpwards,1.3s,ease-in-out,scroll;
+
+}
+
+@keyframes moveUpwards {
+  from {
+   transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+  
+}
+
+/*declaring main container*/
+.container {
+  display: grid;
+  grid-template-areas: 
+      "header header header header header"
+      "content content content content content"
+      "foot foot foot foot foot";
+}
+
+/*header styles*/
+#title {
+  grid-area: header;
+  font-family: "Play", sans-serif;
+  background: linear-gradient(to right, #112033, #1e6f63); /* Background color */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem; 
+}
+
+
+header h1 a {
+  text-decoration: none;
+  color: white; /* Text color */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem; 
+}
+
+/*nav & ul style in main*/
+main nav ul, main ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 5%;
+}
+
+main a:link {
+  color: orange; /* Link color */
+}
+
+main a:hover {
+  color: red; /* Hover color */
+}
+
+main a:visited {
+  color: darkslateblue; /* Visited link color */
+}
+
+nav li a {
+  text-decoration: none;
+  color: white; /* Text color */
+}
+
+/*setting grid area and fixing the spacing and size also style*/
+main {
+  grid-area: content;
+  display: grid;
+  grid-template-areas: 
+      "experience aboutme aboutme aboutme hobbies"
+      "links education education education books"
+      "skills education education education .";
+}
+
+#foot {
+  grid-area: foot;
+  background-color: #b8d8be; /* Background color */
+  color: white; /* Text color */
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+#experience {
+  grid-area: experience;
+  background-color: rgb(247, 245, 245); /* Light coral */
+  margin: 1rem 0;
+}
+
+#aboutme {
+  grid-area: aboutme;
+  padding: 1rem;
+  display: flex;
+  padding-left: 5%;
+ /* Background color */
+}
+
+#hobbies{
+  grid-area: hobbies;
+  background-color: rgb(247, 245, 245); /* Light coral */
+  margin: 1rem 0;
+}
+
+#links{
+  grid-area: links;
+  background-color: rgb(247, 245, 245); /* Light coral */
+  line-height: 3;
+}
+
+#books{
+  grid-area: books;
+  background-color: rgb(247, 245, 245); /* Light coral */
+}
+
+#skills{
+  grid-area: skills;
+  background-color: rgb(247, 245, 245); /* Light coral */
+  size: 0.1rem;
+  margin: 1rem 0;
+}
+
+#education{
+  grid-area: education;
+  margin: 1rem 1rem;
+  padding-left: 5%;
+
+}
+
+h2{
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  border: dotted 1pt black;
+  padding: 0.5rem;
+}
+
+.info p{
+  padding-top: 1rem;
+}
+
+p {
+  line-height: 1.5; 
+}
+
+main li{
+  padding-bottom: 0.5rem;
+}
+
+.items{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+h1,h2{
+  background-color: #1e6f63; /* Yellow */
+}
+

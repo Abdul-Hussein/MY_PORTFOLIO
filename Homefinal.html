@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/Menubar.css">
+  <link rel="stylesheet" href="CSS/HomeFinal.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <script src="script.js"></script>
+  <style>   
+    @media (max-width: 768px) {
+      /* Call mobile.css for screens with a width of 768px or less */
+      @import url('mobile.css');
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="menu">
+      <li><a href="Homefinal.html">Home</a></li>
+      <li><a href="Projectsfinal.html">Projects</a></li>
+      <li><a href="Contactfinal.html">Contact</a></li>
+      <li><a href="Home-BlogPage.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <article class="container">
+    <div class="home-buttons">
+      <a data-theme-secondary="false" class="About-me" href="#About-link">About></a>
+      <a data-theme-secondary="false" class="ImportantLinks" href="#link">Links></a>
+      <a data-theme-secondary="false" class="Experience" href="#experience">Experience></a>
+    </div>
+
+    <section class="profile-section">
+      <h1 class="name">ABDIRAHMAN HUSSEIN</h1>
+      <img class="profile-photo" src="Project photos/photo.png" alt="Profile Photo">
+      <h2 class="header">COMPUTER SCIENCE STUDENT</h2>
+      <p class="brief-overview">Knowledge in <strong class="lang">HTML, CSS, JavaScript, and Java.</strong> Solid understanding of responsive web design principles. Experience with API integration such as Java Servlets and frameworks such as Spring Framework.</p>
+    </section>
+
+    <section class="about-section" id="About-link">
+      <h3 class="section-title">ABOUT ME</h3>
+      <p class="about-detail">As a computer science and management student, I'm on track to graduate in 2026, and I come equipped with a varied professional background that I believe adds a unique flavor to my approach in web development. Having worked as a teacher, a salesperson, and an IT support specialist, I bring a mix of skills that naturally align with the dynamic nature of the web development field.</p>
+    </section>
+
+    <section id="link" class="header">
+      <h2 class="Links-header">IMPORTANT LINKS</h2>
+    </section>
+
+    <section class="card-section">
+      <div class="card">
+        <img class="card-img-top" src="Project photos/Linkedin-profile.jpg" alt="LinkedIn Profile">
+        <div class="card-body">
+          <h4 class="card-title">LinkedIn</h4>
+          <p class="card-text">Connect with me on LinkedIn</p>
+          <a href="https://www.linkedin.com/in/abdirahman-ahmed-685b182a5/" target="_blank" class="btn btn-primary">Visit Profile</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="Project photos/github.jpg" alt="GitHub Profile">
+        <div class="card-body">
+          <h4 class="card-title">GitHub</h4>
+          <p class="card-text">Check out my projects on GitHub.</p>
+          <a href="https://github.com/Abdul-Hussein?tab=projects" target="_blank" class="btn btn-primary">Visit GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="Project photos/CVphoto.png" alt="CV">
+        <div class="card-body">
+          <h4 class="card-title">Curriculum Vitae</h4>
+          <p class="card-text">View my professional Curriculum Vitae.</p>
+          <a href="CV.html" target="_blank" class="btn btn-primary">My CV</a>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>References</h3>
+        <ul>
+          <li><a href="CV.html">My CV</a></li>
+          <li><a href="Home-BlogPage.html">More About Me</a></li>
+          <!-- Add LinkedIn link here -->
+        </ul>
+      </div>
+      <div id="experience" class="footer-section">
+        <h3>Companies Worked For</h3>
+        <ul>
+          <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
+          <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Achievements</h3>
+        <ul>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="Projectsfinal.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact-info">
+      <h3>Contact Me</h3>
+      <p>Email: abdulxxx321@gmail.com</p>
+      <p>Phone: +1 123-456-7890</p>
+    </div>
+  </footer>
+</body>
+</html>

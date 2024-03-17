@@ -1,0 +1,145 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 75em; /* 1200px converted to em */
+  margin: 0 auto;
+  padding: 1.25em; /* 20px converted to em */
+}
+
+.home-buttons {
+  text-align: center;
+}
+
+
+.About-me,
+.ImportantLinks,
+.Experience {
+  color: #21b7b3;
+  font-family: 'Georgia', serif;
+  font-size: 1em; /* 16px converted to em */
+  text-decoration: none;
+  margin-right: 1.25em; /* 20px converted to em */
+  transition: color 0.3s ease;
+}
+
+
+.About-me:hover,
+.ImportantLinks:hover,
+.Experience:hover {
+  color: #112033;
+}
+
+/* Profile section styles */
+.profile-section {
+  text-align: center;
+  margin-top: 3.125em; /* 50px converted to em */
+}
+
+.profile-photo {
+  max-width: 12.5em; /* 200px converted to em */
+  border-radius: 50%;
+  margin-top: 0.625em; /* 1rem converted to em */
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* 4px converted to em */
+}
+
+.header {
+  color: #21b7b3;
+  margin-top: 2em; /* 32px converted to em */
+}
+
+.lang {
+  font-weight: bold;
+}
+
+/* About section styles */
+.section-title {
+  font-weight: bold;
+  color: #21b7b3;
+  font-size: 1.5em; /* 24px converted to em */
+  margin-top: 0.3125em; /* 5px converted to em */
+}
+
+.about-section {
+  background: linear-gradient(to right, #112033, #1e6f63);
+  color: white;
+  padding: 1.25em; /* 20px converted to em */
+  margin-top: 3.125em; /* 50px converted to em */
+  border-radius: 0.625em; /* 10px converted to em */
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* 4px converted to em */
+}
+
+.Links-header {
+  margin-top: 3em; /* 48px converted to em */
+  margin-bottom: 1.5em; /* 24px converted to em */
+  text-align: center;
+}
+
+/* To be worked on */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3.125em; /* 50px converted to em */
+}
+
+.card {
+  background-color: #ffffff;
+  width: 18.75em; /* 300px converted to em */
+  max-width: 100%;
+  min-width: 15.625em; /* 250px converted to em */
+  padding: 1.25em; /* 20px converted to em */
+  margin-bottom: 1.25em; /* 20px converted to em */
+  border-radius: 0.625em; /* 10px converted to em */
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* 0 4px 8px rgba(0, 0, 0, 0.1) */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.313em); /* -5px converted to em */
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 0.625em; /* 10px converted to em */
+  max-height: 9.375em; /* 150px converted to em */
+  object-fit: cover;
+  margin-bottom: 0.9375em; /* 15px converted to em */
+}
+
+.card-title {
+  color: #112033;
+  font-size: 1.2em; /* 20px converted to em */
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.card-text {
+  color: #555;
+  text-align: center;
+  font-family: 'Garamond', serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.875em; /* 15px converted to em */
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #112033, #1e6f63);
+  padding: 0.5em 1.25em; /* 8px 20px converted to em */
+  border-radius: 1.25em; /* 20px converted to em */
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.063em; /* 1px converted to em */
+  text-align: center; /* Center align the text */
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #1e6f63, #112033);
+}

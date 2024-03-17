@@ -1,0 +1,89 @@
+/* Main Content Styles */
+main {
+  margin: 1.25rem; /* Equivalent to 20px */
+}
+
+.recent-post {
+  font-size: 1.5rem; /* Equivalent to 24px */
+  margin: 4rem; /* Equivalent to 20px */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Button Link Styling */
+#addForm {
+  padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem; /* Equivalent to 5px */
+  text-decoration: none;
+}
+
+#addForm:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Post Styles */
+.content {
+  margin-bottom: 1.25rem; /* Equivalent to 20px */
+}
+
+.post {
+  border: 0.0625rem solid black; /* Equivalent to 1px */
+  border-radius: 0.3125rem; /* Equivalent to 5px */
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.post img {
+  width: 12.5rem; /* Equivalent to 200px */
+  height: auto;
+  margin: 0.625rem; /* Equivalent to 10px */
+}
+
+.post-review {
+  padding: 1.25rem; /* Equivalent to 20px */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-review h2 {
+  margin-top: 0;
+}
+
+.post-meta {
+  color: #666;
+  margin-bottom: 0.625rem; /* Equivalent to 10px */
+  font-size: 1rem; /* Equivalent to 16px */
+}
+
+.preview-text {
+  color: #333;
+  font-size: 0.875rem; /* Equivalent to 14px */
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 48rem) { /* Equivalent to 768px */
+  .post {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .post img {
+    margin: 0 auto; /* Center the image */
+  }
+}

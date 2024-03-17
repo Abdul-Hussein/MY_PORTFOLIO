@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="CSS/Contactfinal.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/26111a072d.js" crossorigin="anonymous"></script>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="CSS/Menubar.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/projectsfinal.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <style>   
+        @media (max-width: 768px) {
+            /* Call mobile.css for screens with a width of 768px or less */
+            @import url('mobile.css');
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+          <li><a href="Homefinal.html">Home</a></li>
+          <li><a href="Projectsfinal.html">Projects</a></li>
+          <li><a href="Contactfinal.html">Contact</a></li>
+          <li><a href="Home-BlogPage.html">Blog</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="video-section">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="Project photos/Video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h1 class="video-title">My Projects</h1>
+            <button class="video-button"><a href="#Projects">Explore</a></button>
+        </div>
+    </section>
+        
+    <section>
+      <div class="logos">
+        <div class="logos-slide">
+          <i class="fab fa-spring-boot spring-boot"></i>
+          <i class="fa-brands fa-css3-alt css3"></i>
+          <i class="fa-brands fa-java java"></i>
+          <i class="fab fa-html5 html5"></i>
+          <i class="fa-brands fa-js js"></i>
+          <i class="fa-brands fa-aws aws"></i>
+          <i class="fa-brands fa-git"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-docker"></i>
+        </div>
+      </div>
+    </section>
+    
+        <section>
+          <h1>What I Have Worked On</h1>
+        </section>
+
+      
+        <article class="Projects" id="Projects">
+            <div class="project_display">
+                <figure>
+                    <img class="fig" src="Project photos/Bookreg-photo.jpg" alt="FPL PROJECT">
+                    <img class="badge" src="Project photos/first.png" alt="Rank Icon" class="overlayed">
+                </figure>
+                <div class="text-container">
+                    <h2 class="header">The Fantasy League Application</h2>
+                    <div class="text-content">
+                        <p class="paragraph">Experience the thrill of managing your own fantasy football team with our Fantasy League Application.
+                            Create your dream team, strategize your lineup, and compete against friends in simulated football matches.
+                            Whether you're a seasoned fantasy football veteran or new to the game,
+                            our application offers an exciting and immersive experience for football enthusiasts of all levels</p>
+                            <div class="images">
+                               <i class="fa-brands fa-css3-alt css3"></i>
+                              <i class="fa-brands fa-java java"></i>
+                              <i class="fab fa-html5 html5"></i>
+                            </div>
+                        <div class="button-container">
+                            <b class="button"><a href="#">View it here</a></b>
+                            <b class="button"><a href="#">GitHub</a></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="project_display">
+                <div class="text-container">
+                    <h2 class="header">The Book Register App</h2>
+                    <div class="text-content">
+                        <p class="paragraph">The Book Catalog Website is a 
+                            user-friendly platform for managing and browsing a collection of books.
+                            It features a table layout for organized presentation,
+                            a search bar for quick book discovery, 
+                            and pagination for navigating through extensive listings.</p>
+                         <div class="images">
+                          <img class="project-languages" src="Project photos/Spring-boot-logo.png" alt="">
+                          <i class="fa-brands fa-css3-alt css3"></i>
+                          <i class="fa-brands fa-java java"></i>
+                          <i class="fab fa-html5 html5"></i>
+                        </div>
+                        <div class="button-container">
+                            <b class="button"><a href="#">View it here</a></b>
+                            <b class="button"><a href="#">GitHub</a></b>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img class="fig" src="Project photos/Fpl photo.png" alt="FPL PROJECT">
+                    <img class="badge" src="Project photos/second.png" alt="Rank Icon" class="overlayed">
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>References</h3>
+      <ul>
+        <li><a href="CV.html">My CV</a></li>
+        <li><a href="Home-BlogPage.html">More About Me</a></li>
+        <!-- Add LinkedIn link here -->
+       
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Companies Worked For</h3>
+      <ul>
+        <li><a href="https://mandelagroup.co.ug/">City Tyres</a></li>
+        <li><a href="https://www.tuitioncentres.org/">Axis Tuition Center</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Achievements</h3>
+      <ul>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="Projectsfinal.html">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact-info">
+    <h3>Contact Me</h3>
+    <p>Email: abdulxxx321@gmail.com</p>
+    <p>Phone: +1 123-456-7890</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
