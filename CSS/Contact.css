@@ -7,7 +7,7 @@ body {
   
 }
 
-/* Define spacing adjustments for elements */
+/* Spacing adjustments for elements */
 .element1 {
   margin-bottom: 20px; /* Adjust margin bottom */
 }
@@ -81,7 +81,7 @@ body {
 /* Styles for contact section */
 .for-contact {
   padding-bottom: 40px;
-  max-width: 100%; /* Adjusted width to be responsive */
+  max-width: 100%; 
   font-size: 20px;
   font-family: sans-serif;
   margin-left: 20px;

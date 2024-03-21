@@ -265,11 +265,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 overflow: hidden; /* Ensure text doesn't overflow */
 }
 
-/*Media queries for screens up to 400px*/
+
 
 
 /* Media query for screens up to 360px */
-/* Media query for screens up to 360px */
+
 @media screen and (max-width: 360px) {
 .text-content .paragraph {
 width: 90%; /* Adjust the width as needed for screens with a width of 360px or less */
@@ -278,8 +278,7 @@ margin: 0 auto; /* Center the paragraph */
 }
 
 /* Media query for screens up to 768px */
-/* Media query for screens up to 768px */
-/* Media query for screens up to 768px */
+
 @media screen and (max-width: 768px) {
 .project_display {
 flex-direction: column; /* Display items vertically */

@@ -34,6 +34,19 @@ nav {
   display: inline-block; /* Display menu items inline-block */
 }
 
+
+.menu li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 0.875em 1.25em; /* Padding for each menu item */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color */
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
 .menu li a {
   display: block;
   color: white; /* Text color */
@@ -45,6 +58,21 @@ nav {
 .menu li a:hover {
   transition: background-color 0.3s ease; /* Smooth transition effect */
 }
+
+
+.menu li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 0.875em 1.25em; /* Padding for each menu item */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color */
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
 
 @media screen and (max-width: 48em) {
   .menu {
