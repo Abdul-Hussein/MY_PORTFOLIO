@@ -1,21 +1,10 @@
 /*overall*/
 body{
-  font-family: "Quicksand", sans-serif;
-  margin: 0.5rem;
-/* Background color */
-  animation-name: moveUpwards,1.3s,ease-in-out,scroll;
+font-family: "Quicksand", sans-serif;
+ margin: 0.5rem;
 
 }
 
-@keyframes moveUpwards {
-  from {
-   transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-  
-}
 
 /*declaring main container*/
 .container {
@@ -26,32 +15,7 @@ body{
       "foot foot foot foot foot";
 }
 
-/*header styles*/
-#title {
-  grid-area: header;
-  font-family: "Play", sans-serif;
-  background: linear-gradient(to right, #112033, #1e6f63); /* Background color */
-  color: white; /* Text color */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem; 
-}
 
-
-header h1 a {
-  text-decoration: none;
-  color: white; /* Text color */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem; 
-}
 
 
 /*setting grid area and fixing the spacing and size also style*/
@@ -146,3 +110,52 @@ h1,h2{
   background-color: #1e6f63; /* Yellow */
 }
 
+
+/* Media queries */
+@media (max-width: 780px) {
+ /*shorten columns of grid into one*/
+    .container {
+        grid-template-areas:
+            "header"
+            "content"
+            "foot";
+    }
+
+    main {
+        grid-area: content;
+        display: grid;
+        grid-template-areas: 
+            "aboutme"
+            "education"
+            "links"
+            "experience"
+            "skills"
+            "hobbies"
+            "movies";
+    }
+
+    /*change flex direction to columns and fix spacing*/
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #aboutme{
+        flex-direction: column;
+        align-items: center;
+    }
+    #education{
+        padding-left: 0;
+    }
+
+    #aboutme, #experience, #skills, #education, #hobbies, #movies, #links {
+        margin: 0.5rem 0;
+    }
+    
+
+
+}

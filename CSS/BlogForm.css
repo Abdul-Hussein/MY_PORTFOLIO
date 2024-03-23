@@ -1,0 +1,59 @@
+  /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:rgb(184, 216, 190);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    .btn-submit,
+    .btn-reset {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      width: 20%; 
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btn-submit:hover,
+    .btn-reset:hover {
+      background-color: #0056b3;
+    }

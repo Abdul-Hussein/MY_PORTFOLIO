@@ -3,89 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add Blog Post</title>
+  <title>My Blog Page</title>
+  <link rel="stylesheet" href="CSS/BlogForm.css">
+  <!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <style>
-    /* Add your custom CSS styles here */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color:rgb(221, 221, 221);
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    form {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      height: 150px;
-    }
-
-    .btn-submit,
-    .btn-reset {
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      width: 20%; 
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 4px;
-      text-align: center;
-    }
-
-    .btn-submit:hover,
-    .btn-reset:hover {
-      background-color: #0056b3;
-    }
-   
-  </style>
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <!-- Link to your CSS files -->
+  <link rel="stylesheet" href="CSS/BlogPage.css">
+  <link rel="stylesheet" href="CSS/reset.css">  
+  <link rel="stylesheet" href="CSS/BlogMenuBar.css">
 </head>
 <body>
- 
-  <div class="container" id="my-Form">
+
+
+  <header id="title">
+    <h1><a href="#">Abdirahman Hussein</a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="Home-BlogPage.html">Home</a></li>
+        <li><a href="BlogPage.html">Blog</a></li>
+        <li><a href="Login-page.html">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div>
+    </div>
+
+  <div class="container">
     <h2>Add New Blog Post</h2>
-    <form id="blogPostForm">
+    <form id="form">
       <label for="title">Title:</label>
-      <input id="title" name="title" required>
+      <input id="myTitle" name="title" required>
 
       <label for="author">Author:</label>
       <input id="author" name="author" required>
 
       <label for="content">Content:</label>
-      <textarea id="content" placeholder="Type your text here" name="content" required></textarea>
+      <textarea id="content" name="content" required></textarea>
 
       <input class="btn-submit" type="submit" value="Post">
       <input class="btn-reset" type="reset" value="Clear">
     </form>
   </div>
+
+
+    <h1 class="recent-post">
+     My favorite Posts
+    </h1>
+    
+   
+    
+    <!-- First Blog Post -->
+    <div class="content">
+      <div class="post">
+        <img src="Project photos/BlogPost1.png" alt="post-image">
+        <div class="post-review">
+          <h2><a  href="https://netflixtechblog.com/evolving-from-rule-based-classifier-machine-learning-powered-auto-remediation-in-netflix-data-039d5efd115b" >Evolving from Rule-based Classifier</a></h2>
+          <p class="post-meta">By BinBing Hou | March 4, 2024</p>
+          <p class="preview-text">This is a brief preview of the first post. It summarizes the content and entices readers to click and read more.</p>
+          <a href="single.html">Read more</a>
+        </div>
+      </div>
+    </div>
+     
+    <!-- Second Blog Post -->
+    <div class="content">
+      <div class="post">
+        <img src="Project photos/BlogPost2.png" alt="post-image">
+        <div class="post-review">
+          <h2><a href="https://www.uber.com/en-GB/blog/building-scalable-real-time-chat/?uclick_id=df7f4c47-850e-48fb-b2e4-8bd559104843">Building Scalable, Real-Time Chat to Improve Customer Experience</a></h2>
+          <p class="post-meta">By Avijit Singh | February 20, 2024</p>
+          <p class="preview-text">This is a brief preview of the second post. It summarizes the content and entices readers to click and read more.</p>
+          <a href="single.html">Read more</a>
+        
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Other Blog Posts -->
+    <!--Any one can add this-->
+
+    <h1 class="recent-post">Other Blog Posts</h1>
+
+    
+    <div id="post-add" class="post-add">
+        <h2 class="myTitle">The wonderful world of Web Programming</h2>
+        <p id="author" class="post-meta">By Avijit Singh</p>
+        <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
+      <hr class="divider">
+    </div>
+    
+    <div id="post-add" class="post-add">
+        <h2 class="myTitle">The wonderful world of Web Programming</h2>
+        <p class="post-meta">By Avijit Singh</p>
+        <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
+        <hr id="line" class="divider">
+      </div>
+    
+      
+  </main>
+
+  <!-- Link to your JavaScript file -->
+  <script src="JS/MyBlog.js"></script>
 
 </body>
 </html>

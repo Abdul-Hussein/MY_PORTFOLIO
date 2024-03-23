@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog Page</title>
-  
+  <link rel="stylesheet" href="CSS/BlogForm.css">
+  <!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
   <!-- Link to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-  <!-- Link to CSS files -->
+  <!-- Link to your CSS files -->
   <link rel="stylesheet" href="CSS/BlogPage.css">
   <link rel="stylesheet" href="CSS/reset.css">  
   <link rel="stylesheet" href="CSS/BlogMenuBar.css">
-  <script src="script.js"></script>
- 
 </head>
 <body>
+
+
   <header id="title">
     <h1><a href="#">Abdirahman Hussein</a></h1>
 
@@ -32,11 +36,25 @@
   <main>
 
     <div>
-
-      <button id="addForm">
-        <a href="Blog-form.html">Add a Blog Post</a>
-      </button>
     </div>
+
+  <div class="container">
+    <h2>Add New Blog Post</h2>
+    <form id="form">
+      <label for="title">Title:</label>
+      <input id="myTitle" name="title" required>
+
+      <label for="author">Author:</label>
+      <input id="author" name="author" required>
+
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required></textarea>
+
+      <input class="btn-submit" type="submit" value="Post">
+      <input class="btn-reset" type="reset" value="Clear">
+    </form>
+  </div>
+
 
     <h1 class="recent-post">
      My favorite Posts
@@ -66,6 +84,7 @@
           <p class="post-meta">By Avijit Singh | February 20, 2024</p>
           <p class="preview-text">This is a brief preview of the second post. It summarizes the content and entices readers to click and read more.</p>
           <a href="single.html">Read more</a>
+        
         </div>
       </div>
     </div>
@@ -78,27 +97,25 @@
     <h1 class="recent-post">Other Blog Posts</h1>
 
     
-    <div class="post-add">
-      <div class="blog-post">
-        <span class="date">March 10, 2024</span>
+    <div id="post-add" class="post-add">
         <h2 class="title">The wonderful world of Web Programming</h2>
+        <p id="author" class="post-meta">By Avijit Singh</p>
         <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
-      </div>
       <hr class="divider">
     </div>
     
-    <div class="post-add">
-      <div class="blog-post">
-        <span class="date">March 10, 2024</span>
+    <div id="post-add" class="post-add">
         <h2 class="title">The wonderful world of Web Programming</h2>
+        <p class="post-meta">By Avijit Singh</p>
         <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
+        <hr id="line" class="divider">
       </div>
-      <hr class="divider">
-     
-    </div>
+    
+      
   </main>
- <footer id="foot">
-   <p>Copyright  &copy; Abdirahman Hussein</p>
- </footer>
+
+  <!-- Link to your JavaScript file -->
+  <script src="JavaScript/MyBlog.js"></script>
+
 </body>
 </html>

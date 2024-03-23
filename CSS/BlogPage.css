@@ -1,36 +1,26 @@
 /* Main Content Styles */
 main {
-  margin: 1.25rem; 
+  margin: 1.25rem; /* Equivalent to 20px */
 }
-body{
-  background-color: #dbdada;
-}
+
 .recent-post {
-  font-size: 1.5rem;
-  margin: 4rem; 
+  font-size: 1.5rem; /* Equivalent to 24px */
+  margin: 4rem; /* Equivalent to 20px */
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-#foot {
-  grid-area: foot;
-  background: linear-gradient(to right, #112033, #1e6f63); /* Background color */
-  color: white; /* Text color */
-  padding: 0.5rem 0;
-  font-size: 0.75rem;
-  margin: 0;
-}
-.post-add{
-  background-color: #fff;
-  padding: 1.25rem; 
+
+.title{
+  color: orange;
 }
 
 /* Button Link Styling */
 #addForm {
-  padding: 0.625rem 1.25rem; 
+  padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 0.3125rem; 
+  border-radius: 0.3125rem; /* Equivalent to 5px */
   text-decoration: none;
 }
 
@@ -38,28 +28,27 @@ body{
   background-color: #0056b3;
 }
 
-
+/* Blog Post Styles */
 .content {
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.25rem; /* Equivalent to 20px */
 }
 
 .post {
-  border: 0.0625rem solid #0056b3; 
-  border-radius: 0.3125rem; 
+  border: 0.0625rem solid black; /* Equivalent to 1px */
+  border-radius: 0.3125rem; /* Equivalent to 5px */
   overflow: hidden;
   display: flex;
-  flex-wrap: wrap; /* Allows flex items to wrap to the next line */
-  background-color: #fff;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
 }
 
 .post img {
-  width: 12.5rem; 
+  width: 12.5rem; /* Equivalent to 200px */
   height: auto;
-  margin: 0.625rem; 
+  margin: 0.625rem; /* Equivalent to 10px */
 }
 
 .post-review {
-  padding: 1.25rem; 
+  padding: 1.25rem; /* Equivalent to 20px */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -71,19 +60,27 @@ body{
 
 .post-meta {
   color: #666;
-  margin-bottom: 0.625rem;
-  font-size: 1rem; 
+  margin-bottom: 0.625rem; /* Equivalent to 10px */
+  font-size: 1rem; /* Equivalent to 16px */
 }
 
 .preview-text {
   color: #333;
-  font-size: 0.875rem; 
+  font-size: 0.875rem; /* Equivalent to 14px */
 }
 
+a {
+  text-decoration: none;
+  color: #007bff;
+}
 
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
 
 /* Media Queries */
-@media screen and (max-width: 48rem) { 
+@media screen and (max-width: 48rem) { /* Equivalent to 768px */
   .post {
     flex-direction: column; /* Stack items vertically on smaller screens */
   }
@@ -91,4 +88,50 @@ body{
   .post img {
     margin: 0 auto; /* Center the image */
   }
+
+  .container {
+    grid-template-areas:
+        "header"
+        "content"
+        "foot";
 }
+
+main {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+        "aboutme"
+        "education"
+        "links"
+        "experience"
+        "skills"
+        "hobbies"
+        "books";
+}
+
+/*change flex direction to columns and fix spacing*/
+header {
+    flex-direction: column;
+}
+
+header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#aboutme{
+    flex-direction: column;
+    align-items: center;
+}
+#education{
+    padding-left: 0;
+}
+
+#aboutme, #experience, #skills, #education, #hobbies, #books, #links {
+    margin: 0.5rem 0;
+}
+
+
+
+}
+
