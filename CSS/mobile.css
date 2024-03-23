@@ -22,48 +22,4 @@
   }
 
 
-*shorten columns of grid into one*/
-    .container {
-        grid-template-areas:
-            "header"
-            "content"
-            "foot";
-    }
-
-    main {
-        grid-area: content;
-        display: grid;
-        grid-template-areas: 
-            "aboutme"
-            "education"
-            "links"
-            "experience"
-            "skills"
-            "hobbies"
-            "movies";
-    }
-
-    /*change flex direction to columns and fix spacing*/
-    header {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    #aboutme{
-        flex-direction: column;
-        align-items: center;
-    }
-    #education{
-        padding-left: 0;
-    }
-
-    #aboutme, #experience, #skills, #education, #hobbies, #movies, #links {
-        margin: 0.5rem 0;
-    }
-    
-
 

@@ -1,51 +1,61 @@
+/*header styles*/
 #title {
-    grid-area: header;
-    font-family: "Play", sans-serif;
-    background: linear-gradient(to right, #112033, #1e6f63); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem; 
+  grid-area: header;
+  font-family: "Play", sans-serif;
+  background: linear-gradient(to right, #112033, #1e6f63); /* Background color */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem; 
 }
 
 
 header h1 a {
-    text-decoration: none;
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
+  text-decoration: none;
+  color: white; /* Text color */
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-
 header nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem; 
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem; 
 }
 
 /*nav & ul style in main*/
- main nav ul, main  ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: left;
-    padding-inline-start: 5%;
+main nav ul, main ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 5%;
 }
 
 main a:link {
-    color: orange;
+  color: orange; /* Link color */
 }
 
 main a:hover {
-    color: red
+  color: red; /* Hover color */
 }
 
 main a:visited {
-    color: darkslateblue
+  color: darkslateblue; /* Visited link color */
+}
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
 
 nav li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white; /* Text color */
 }
