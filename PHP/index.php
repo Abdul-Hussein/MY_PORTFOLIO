@@ -1,49 +1,47 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+?>
+
+
+<?php include_once("path.php"); ?>
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog Page</title>
-  
+  <link rel="stylesheet" href="CSS/BlogForm.css">
+  <!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--Font awesome -->
+<script src="https://kit.fontawesome.com/1d0680ab81.js" crossorigin="anonymous"></script>
   <!-- Link to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-  <!-- Link to CSS files -->
+  <!-- Link to your CSS files -->
   <link rel="stylesheet" href="CSS/BlogPage.css">
   <link rel="stylesheet" href="CSS/reset.css">  
   <link rel="stylesheet" href="CSS/BlogMenuBar.css">
-  <script src="script.js"></script>
+
  
 </head>
 <body>
-  <header id="title">
-    <h1><a href="#">Abdirahman Hussein</a></h1>
+<?php include(ROOT_PATH . "header.php"); ?>
+  
+<main>
+  
+<?php include(ROOT_PATH . "addEntry.php"); ?>
 
-    <nav>
-      <ul>
-        <li><a href="Home-BlogPage.html">Home</a></li>
-        <li><a href="BlogPage.html">Blog</a></li>
-        <li><a href="Login-page.html">Log in</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-
-    <div>
-
-      <button id="addForm">
-        <a href="Blog-form.html">Add a Blog Post</a>
-      </button>
-    </div>
-
-    <h1 class="recent-post">
-     My favorite Posts
-    </h1>
-    
    
-    
+<br><br>
+<h1> MY FAVORITE POSTS</h1>
+<br><br>
     <!-- First Blog Post -->
     <div class="content">
       <div class="post">
@@ -66,39 +64,30 @@
           <p class="post-meta">By Avijit Singh | February 20, 2024</p>
           <p class="preview-text">This is a brief preview of the second post. It summarizes the content and entices readers to click and read more.</p>
           <a href="single.html">Read more</a>
+        
         </div>
       </div>
     </div>
 
 
-
+<br><br>
     <!-- Other Blog Posts -->
     <!--Any one can add this-->
 
-    <h1 class="recent-post">Other Blog Posts</h1>
+    <h1 >OTHER BLOG POSTS</h1>
+    <br><br>
+<?php include(ROOT_PATH . "viewBlog.php"); ?>
 
-    
-    <div class="post-add">
-      <div class="blog-post">
-        <span class="date">March 10, 2024</span>
-        <h2 class="title">The wonderful world of Web Programming</h2>
-        <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
-      </div>
-      <hr class="divider">
-    </div>
-    
-    <div class="post-add">
-      <div class="blog-post">
-        <span class="date">March 10, 2024</span>
-        <h2 class="title">The wonderful world of Web Programming</h2>
-        <p class="content">I enjoy developing web applications using HTML, Java Script and PHP.</p>
-      </div>
-      <hr class="divider">
-     
-    </div>
+
+
+
+      
   </main>
- <footer id="foot">
-   <p>Copyright  &copy; Abdirahman Hussein</p>
- </footer>
+        <footer id="foot">
+            <p>Copyright  &copy; Abdirahman Hussein</p>
+        </footer>
+
+     
 </body>
 </html>
+

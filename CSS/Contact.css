@@ -4,15 +4,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
-  
 }
 
 /* Spacing adjustments for elements */
 .element1 {
   margin-bottom: 20px; /* Adjust margin bottom */
 }
-
-
 
 .element2 {
   margin-top: 20px; /* Adjust margin top */
@@ -135,8 +132,6 @@ body {
   transform: translateY(1em);
 }
 
-
-
 /* Styles for home, about me, and important links */
 .home-page,
 .About-me,
@@ -204,7 +199,6 @@ body {
   animation: fadeInUp 0.8s ease forwards;
 }
 
-
 /* Form Styles */
 .form-header, .form-header2 {
   text-align: center;
@@ -216,12 +210,13 @@ body {
   font-weight: 500;
   margin-top: 50px;
 }
+
 .form-header2 {
   font-size: 20px;
   font-weight: 100;
 }
-/* Keyframes for word-by-word transition */
 
+/* Keyframes for word-by-word transition */
 .for-contact {
   padding-bottom: 40px;
   width: 100%;
@@ -309,3 +304,37 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 .image-container-horizontal .photo {
   margin-left: 20px;
 }
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust contact container layout for smaller screens */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Adjust margin for contact text */
+  .for-contact {
+    margin-left: 0;
+  }
+  
+  /* Adjust margin for photos */
+  .photo {
+    margin-left: 0;
+    margin-bottom: 1.25rem; /* equivalent to 20px */
+  }
+  
+  /* Adjust margin for form headers */
+  .form-header,
+  .form-header2 {
+    margin-top: 1.25rem; /* equivalent to 20px */
+  }
+  
+  /* Adjust form width */
+  form {
+    width: 80%;
+  }
+}
+

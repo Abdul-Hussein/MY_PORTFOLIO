@@ -1,0 +1,118 @@
+/*overall*/
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0.5rem;
+     background-color: rgb(213, 211, 211);
+}
+
+/*declaring main container*/
+.container {
+   
+    display: grid;
+    grid-template-areas: 
+        "header header header header header"
+        "content content content content content"
+        "foot foot foot foot foot";
+}
+
+
+/*setting grid area and fixing the spacing and size also style*/
+main {
+
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+        "experience aboutme aboutme aboutme hobbies"
+        "links aboutme aboutme aboutme books"
+        "skills education education education .";
+}
+
+#foot {
+    grid-area: foot;
+    background:  linear-gradient(to right, #112033, #1e6f63);;
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    margin: 0 0;
+}
+
+#experience {
+    grid-area: experience;
+    background-color: white;
+    margin: 1rem 0;
+}
+
+
+#aboutme {
+    grid-area: aboutme;
+    padding: 1rem;
+    display: flex;
+    padding-left: 5%;
+}
+
+
+
+.aboutme{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+}
+
+#hobbies{
+    grid-area: hobbies;
+    background-color: white;
+    margin: 1rem 0;
+}
+
+#links{
+    grid-area: links;
+    background-color: white;
+    line-height: 3;
+}
+
+#books{
+    grid-area: books;
+    background-color: white;
+}
+
+#skills{
+    grid-area: skills;
+    background-color: white;
+    size: 0.1rem;
+    margin: 1rem 0;
+}
+
+#education{
+    grid-area: education;
+    margin: 1rem 0;
+    padding-left: 5%;
+   
+
+}
+
+h2{
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    border: dotted 1pt black;
+    padding: 0.5rem;
+}
+
+.info p{
+    padding-top: 1rem;
+}
+
+p {
+    line-height: 1.5; 
+}
+
+main li{
+    padding-bottom: 0.5rem;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+h1,h2{
+    background:  linear-gradient(to right, #112033, #1e6f63);
+}
