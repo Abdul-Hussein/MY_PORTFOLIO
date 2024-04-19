@@ -270,7 +270,7 @@ overflow: hidden; /* Ensure text doesn't overflow */
 
 /* Media query for screens up to 360px */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
 .text-content .paragraph {
 width: 90%; /* Adjust the width as needed for screens with a width of 360px or less */
 margin: 0 auto; /* Center the paragraph */

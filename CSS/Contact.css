@@ -304,37 +304,16 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 .image-container-horizontal .photo {
   margin-left: 20px;
 }
-
-/* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
-  /* Adjust contact container layout for smaller screens */
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  /* Adjust margin for contact text */
-  .for-contact {
-    margin-left: 0;
-  }
-  
   /* Adjust margin for photos */
   .photo {
     margin-left: 0;
-    margin-bottom: 1.25rem; /* equivalent to 20px */
+    margin-bottom: 20px; /* Keep margin consistent */
   }
   
   /* Adjust margin for form headers */
   .form-header,
   .form-header2 {
-    margin-top: 1.25rem; /* equivalent to 20px */
-  }
-  
-  /* Adjust form width */
-  form {
-    width: 80%;
+    margin-top: 50px; /* Keep margin consistent */
   }
 }
-

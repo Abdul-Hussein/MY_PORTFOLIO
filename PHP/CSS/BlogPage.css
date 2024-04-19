@@ -4,7 +4,7 @@ main {
 }
 
 h1{
-  font-size: 3.5rem; /* Equivalent to 24px */
+  font-size: 1.5rem; /* Equivalent to 24px */
   margin: 1.5rem; /* Equivalent to 20px */
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -73,10 +73,9 @@ h1{
   margin-bottom: 0.625rem; /* Equivalent to 10px */
   font-size: 1rem; /* Equivalent to 16px */
 }
-.date{
+.date,.time{
   display: inline-block;
-  color: aqua;
-  
+  color: aqua;  
 }
 .preview-text {
   color: #333;
@@ -88,6 +87,19 @@ h1{
     font-size: 0.75rem;
     margin: 0 0;
 }
+/* Add spacing between paragraphs */
+.content p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Add spacing between lines of text */
+.content {
+    line-height: 1.6; /* Adjust the value as needed */
+}
+.missing-field {
+  border: 1px solid red; /* Example highlighting style */
+}
+
 a {
   text-decoration: none;
   color: #007bff;
@@ -133,3 +145,6 @@ header nav ul {
 
 }
 
+#sort-form{
+text-align: end;
+}

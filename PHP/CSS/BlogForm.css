@@ -54,7 +54,7 @@ textarea {
 }
 
 .btn-submit,
-.btn-reset {
+.btn-reset,.btn-preview {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -66,6 +66,9 @@ textarea {
 }
 
 .btn-submit:hover,
-.btn-reset:hover {
+.btn-reset:hover,.btn-preview:hover {
   background-color: #0056b3;
 }
+  .missing-field {
+    border: 1px solid red; /* Example highlighting style */
+  }

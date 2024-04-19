@@ -4,8 +4,10 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  font-family: Tahoma;
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #66a99e 0%, #f3f3f3 100%, transparent);
 }
 
 h1, p {
@@ -83,15 +85,16 @@ label {
     margin-left: 1rem;
   }
 }
-body{
-    padding:50px;
-}
+
+
 .container{
     max-width: 600px;
     margin:0 auto;
     padding:50px;
+    background: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .form-group{
     margin-bottom:30px;
 }
