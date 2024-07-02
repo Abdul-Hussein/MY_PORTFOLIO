@@ -92,8 +92,6 @@ This portfolio project includes a blog section with functionalities such as regi
   - **Sort**: Sort posts by month or day for easy browsing.
   - **Admin Functions**: Admin can edit and delete any post.
 
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the project's coding standards and is well-documented.
 
 ## License
 This project is licensed under the [ABDUL HUSSEIN PORTFOLIO License](ABDUL HUSSEIN).
