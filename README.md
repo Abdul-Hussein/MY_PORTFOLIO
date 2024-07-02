@@ -70,12 +70,6 @@ This portfolio project includes a blog section with functionalities such as regi
    - Open your web browser and go to `http://localhost/MYPORTFOLIO`.
    - Replace `MYPORTFOLIO` with the specific file or index page name if needed, e.g., `http://localhost/MYPORTFOLIO/index.php`.
 
-### Additional Configuration (if needed)
-- **Database Setup:** If your project requires a database, ensure the SQL database is set up correctly.
-  - Open phpMyAdmin (accessible via the XAMPP Control Panel).
-  - Create a new database.
-  - Import any provided SQL files into your database.
-  - Update your project's database configuration file with the correct database name, username, and password.
 
 ### Troubleshooting Tips
 - Ensure that XAMPP is running with administrator privileges.
