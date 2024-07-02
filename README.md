@@ -41,10 +41,6 @@ This portfolio project includes a blog section with functionalities such as regi
 - Google Fonts (for font styles)
 
 ## Setup Instructions
-Here is a more detailed setup guide based on your instructions:
-
-### Step-by-Step Setup Instructions
-
 1. **Clone the Repository:**
    Open your terminal or command prompt and run:
    ```sh
